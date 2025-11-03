@@ -6,6 +6,7 @@ pipeline{
           steps{
             echo "cheeckout the git repo"
           }
+    }
     stage("build"){
       steps{
         echo "build the project"
