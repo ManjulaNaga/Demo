@@ -23,6 +23,7 @@ pipeline{
         echo "deploying the project"
       }
     }
+  }
     post {
         always {
             echo 'Pipeline finished.'
@@ -33,8 +34,7 @@ pipeline{
         failure {
             echo 'Pipeline failed!'
         }
-    }
-    }
+        }
   }
           
       
