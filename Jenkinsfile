@@ -23,16 +23,16 @@ pipeline{
         echo "deploying the project"
       }
     }
-    post{
-      always{
-        echo "pipeline finished"
-      }
-      success{
-        echo "Pipeline successful"
-      }
-      failure{
-        echo "Pipeline failed"
-      }
+    post {
+        always {
+            echo 'Pipeline finished.'
+        }
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
     }
     }
   }
