@@ -2,17 +2,17 @@ pipeline{
   agent: any
 
   stages{
-    stage("checkout'){
+    stage("checkout"){
           steps{
             echo "cheeckout the git repo"
           }
-    stage('build'){
+    stage("build"){
       steps{
         echo "build the project"
       }
     }
 
-    stage("test){
+    stage("test"){
           steps{
             echo "test the project"
           }
